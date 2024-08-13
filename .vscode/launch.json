@@ -1,0 +1,203 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "BinarySearch",
+            "request": "launch",
+            "mainClass": "Algorithms.Algo.BinarySearch",
+            "projectName": "CodeWithRg_8fe43f09"
+        },
+        {
+            "type": "java",
+            "name": "LinearSearch",
+            "request": "launch",
+            "mainClass": "Algorithms.Algo.LinearSearch",
+            "projectName": "CodeWithRg_8fe43f09"
+        },
+        {
+            "type": "java",
+            "name": "SelectionSort",
+            "request": "launch",
+            "mainClass": "Algorithms.Algo.SelectionSort",
+            "projectName": "CodeWithRg_8fe43f09"
+        },
+        {
+            "type": "java",
+            "name": "CountDigits",
+            "request": "launch",
+            "mainClass": "Algorithms.DSA.Solutions.CountDigits",
+            "projectName": "CodeWithRg_8fe43f09"
+        },
+        {
+            "type": "java",
+            "name": "NumberofElementsInIntersection",
+            "request": "launch",
+            "mainClass": "Algorithms.DSA.Solutions.NumberofElementsInIntersection",
+            "projectName": "CodeWithRg_8fe43f09"
+        },
+        {
+            "type": "java",
+            "name": "CommonElements",
+            "request": "launch",
+            "mainClass": "Arrays.CommonElements",
+            "projectName": "CodeWithRg_8fe43f09"
+        },
+        {
+            "type": "java",
+            "name": "LargestNumberInArray",
+            "request": "launch",
+            "mainClass": "Arrays.LargestNumberInArray",
+            "projectName": "CodeWithRg_8fe43f09"
+        },
+        {
+            "type": "java",
+            "name": "SmallestNUmberInArray",
+            "request": "launch",
+            "mainClass": "Arrays.SmallestNUmberInArray",
+            "projectName": "CodeWithRg_8fe43f09"
+        },
+        {
+            "type": "java",
+            "name": "ConvertZeroOrOne",
+            "request": "launch",
+            "mainClass": "Bitwise.ConvertZeroOrOne",
+            "projectName": "CodeWithRg_8fe43f09"
+        },
+        {
+            "type": "java",
+            "name": "CommonNumbersinArr",
+            "request": "launch",
+            "mainClass": "CommonNumbersinArr",
+            "projectName": "CodeWithRg_8fe43f09"
+        },
+        {
+            "type": "java",
+            "name": "Factorial",
+            "request": "launch",
+            "mainClass": "Factorial",
+            "projectName": "CodeWithRg_8fe43f09"
+        },
+        {
+            "type": "java",
+            "name": "Fibonacci",
+            "request": "launch",
+            "mainClass": "Fibonacci",
+            "projectName": "CodeWithRg_8fe43f09"
+        },
+        {
+            "type": "java",
+            "name": "Gcd",
+            "request": "launch",
+            "mainClass": "Gcd",
+            "projectName": "CodeWithRg_8fe43f09"
+        },
+        {
+            "type": "java",
+            "name": "LargestDigit",
+            "request": "launch",
+            "mainClass": "LargestDigit",
+            "projectName": "CodeWithRg_8fe43f09"
+        },
+        {
+            "type": "java",
+            "name": "Palindrome",
+            "request": "launch",
+            "mainClass": "Palindrome",
+            "projectName": "CodeWithRg_8fe43f09"
+        },
+        {
+            "type": "java",
+            "name": "NumberPyramid",
+            "request": "launch",
+            "mainClass": "Patterns.NumberPyramid",
+            "projectName": "CodeWithRg_8fe43f09"
+        },
+        {
+            "type": "java",
+            "name": "NumberTriangle",
+            "request": "launch",
+            "mainClass": "Patterns.NumberTriangle",
+            "projectName": "CodeWithRg_8fe43f09"
+        },
+        {
+            "type": "java",
+            "name": "RightAngledTriangle",
+            "request": "launch",
+            "mainClass": "Patterns.RightAngledTriangle",
+            "projectName": "CodeWithRg_8fe43f09"
+        },
+        {
+            "type": "java",
+            "name": "SquarePattern",
+            "request": "launch",
+            "mainClass": "Patterns.SquarePattern",
+            "projectName": "CodeWithRg_8fe43f09"
+        },
+        {
+            "type": "java",
+            "name": "Trianglepatwith0or1",
+            "request": "launch",
+            "mainClass": "Patterns.Trianglepatwith0or1",
+            "projectName": "CodeWithRg_8fe43f09"
+        },
+        {
+            "type": "java",
+            "name": "Power",
+            "request": "launch",
+            "mainClass": "Power",
+            "projectName": "CodeWithRg_8fe43f09"
+        },
+        {
+            "type": "java",
+            "name": "Prime",
+            "request": "launch",
+            "mainClass": "Prime",
+            "projectName": "CodeWithRg_8fe43f09"
+        },
+        {
+            "type": "java",
+            "name": "RectanglePattern",
+            "request": "launch",
+            "mainClass": "RectanglePattern",
+            "projectName": "CodeWithRg_8fe43f09"
+        },
+        {
+            "type": "java",
+            "name": "ReverseDigits",
+            "request": "launch",
+            "mainClass": "ReverseDigits",
+            "projectName": "CodeWithRg_8fe43f09"
+        },
+        {
+            "type": "java",
+            "name": "SmallestNumber",
+            "request": "launch",
+            "mainClass": "SmallestNumber",
+            "projectName": "CodeWithRg_8fe43f09"
+        },
+        {
+            "type": "java",
+            "name": "SumofDigits",
+            "request": "launch",
+            "mainClass": "SumofDigits",
+            "projectName": "CodeWithRg_8fe43f09"
+        },
+        {
+            "type": "java",
+            "name": "SumofSquares",
+            "request": "launch",
+            "mainClass": "SumofSquares",
+            "projectName": "CodeWithRg_8fe43f09"
+        }
+    ]
+}

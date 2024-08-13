@@ -1,4 +1,4 @@
-package Algorithms.DSA;
+package Algorithms.DSA.Solutions;
 
 import java.util.HashSet;
 import java.util.Scanner;
@@ -15,8 +15,7 @@ public class NumberofElementsInIntersection {
        // System.out.println(res);
 
         //System.out.println(countofElementsInIntersection(a,b));
-       int sol= Solution.isPerfectNumber(10);
-       System.out.println(sol);
+       
 
     }
     private static int countofElementsInIntersection(int[] a, int[] b) {
@@ -48,25 +47,4 @@ public class NumberofElementsInIntersection {
 
 
 }
-class Solution {
-    static int isPerfectNumber(long N) {
-        // code here
-        if(N>0){
-        int sum=0;
-        for(int i=1;i<N;i++){
-            if(N%i==0){
-                sum+=i;
-            }
-        }
-        if(sum==N){
-            return 1;
-        }
-        else{
-            return 0;
-        }
-        }
-        else{
-            return 0;
-        }
-    }
-};
+
