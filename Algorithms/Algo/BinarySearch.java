@@ -1,4 +1,6 @@
-package Algorithms;
+package Algorithms.Algo;
+
+
 
 public class BinarySearch {
     public static void main(String[] args) {
