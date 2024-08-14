@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "UnionofTwoArrays",
+            "request": "launch",
+            "mainClass": "Algorithms.DSA.Solutions.UnionofTwoArrays",
+            "projectName": "CodeWithRg_8fe43f09"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"

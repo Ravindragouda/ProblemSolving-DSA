@@ -32,6 +32,11 @@ class Solution {
             return 0;
         }
     }
+
+    public static int evenlyDivides(int n) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'evenlyDivides'");
+    }
 };
 
 class Solution2 {
