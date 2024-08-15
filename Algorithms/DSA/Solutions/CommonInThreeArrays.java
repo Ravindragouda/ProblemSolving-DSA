@@ -30,6 +30,7 @@ public class CommonInThreeArrays {
                     h3.add(x);
                 }
             }
+            
             return new ArrayList<>(h3);
     }
 }
