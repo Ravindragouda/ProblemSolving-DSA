@@ -7,11 +7,11 @@ public class PerfectNumber {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter the number : ");
         int n=sc.nextInt();
-        int sol= Solution.isPerfectNumber(10);
+        int sol= Solution1.isPerfectNumber(10);
         System.out.println(sol);
     }
 }
-class Solution {
+class Solution1 {
     static int isPerfectNumber(long N) {
         // code here
         if(N>0){

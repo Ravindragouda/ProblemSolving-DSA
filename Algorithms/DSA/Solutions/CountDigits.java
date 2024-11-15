@@ -7,7 +7,7 @@ public class CountDigits {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter the number N : ");
         int N=sc.nextInt();
-       int ans= Solution.evenlyDivides(N);
+       int ans= Solution1.evenlyDivides(N);
        System.out.println(ans);
 
     }
