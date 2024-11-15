@@ -1,4 +1,4 @@
-package Patterns;
+
 
 public class RightAngledTriangle {
     public static void main(String[] args) {
