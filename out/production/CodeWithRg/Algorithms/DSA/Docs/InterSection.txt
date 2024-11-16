@@ -1,0 +1,102 @@
+Intersection of two arrays
+Difficulty: EasyAccuracy: 32.83%Submissions: 203K+Points: 2
+Given two arrays a[] and b[] respectively of size n and m, the task is to print the count of elements in the intersection (or common elements) of the two arrays.
+
+For this question, the intersection of two arrays can be defined as the set containing distinct common elements between the two arrays. 
+
+Example 1:
+
+Input:
+n = 5, m = 3
+a[] = {89, 24, 75, 11, 23}
+b[] = {89, 2, 4}
+
+Output: 1
+
+Explanation: 
+89 is the only element 
+in the intersection of two arrays.
+Example 2:
+
+Input:
+n = 6, m = 5
+a[] = {1, 2, 3, 4, 5, 6}
+b[] = {3, 4, 5, 6, 7} 
+
+Output: 4
+
+Explanation: 
+3 4 5 and 6 are the elements 
+in the intersection of two arrays.
+Your Task:
+You don't need to read input or print anything. Your task is to complete the function NumberofElementsInIntersection() which takes two integers n and m and their respective arrays a[] and b[]  as input. The function should return the count of the number of elements in the intersection.
+
+ 
+
+Expected Time Complexity: O(n + m).
+Expected Auxiliary Space: O(n).
+
+Constraints:
+1 ≤ n, m ≤ 10^5
+1 ≤ a[i], b[i] ≤ 10^5
+
+_________________________________________________________________________________________________________________
+
+
+class Solution {
+    // Function to return the count of the number of elements in
+    // the intersection of two arrays.
+    public static int NumberofElementsInIntersection(int a[], int b[], int n, int m) {
+        // Your code here
+        int count=0;
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+                if(a[i]==b[j]){
+                    count++;
+                }
+            }
+        }
+        return count;
+    }
+};
+
+
+The code you provided attempts to find the count of common elements in the intersection of two arrays a and b using a nested loop approach. However, this approach has a time complexity of O(n*m), which can be inefficient for large arrays.
+
+A more efficient solution would involve using a HashSet, which allows for O(1) average-time complexity for lookup and insertion operations. Here's a revised version of your function using a HashSet:
+
+
+import java.util.HashSet;
+
+class Solution {
+    // Function to return the count of the number of elements in
+    // the intersection of two arrays.
+    public static int NumberofElementsInIntersection(int a[], int b[], int n, int m) {
+        // Create a HashSet to store the elements of the first array
+        HashSet<Integer> set = new HashSet<>();
+        for (int i = 0; i < n; i++) {
+            set.add(a[i]);
+        }
+        
+        // Create another HashSet to store the common elements
+        HashSet<Integer> intersection = new HashSet<>();
+        for (int j = 0; j < m; j++) {
+            if (set.contains(b[j])) {
+                intersection.add(b[j]);
+            }
+        }
+        
+        // The size of the intersection set gives the number of unique common elements
+        return intersection.size();
+    }
+}
+Explanation:
+HashSet for Array a: We use a HashSet to store all the elements of array a. This allows us to quickly check if an element from array b is present in array a.
+
+HashSet for Intersection: We use another HashSet to store the common elements found in both arrays. Since sets automatically handle duplicates, we only get unique common elements.
+
+Count: Finally, the size of the intersection set gives us the count of unique common elements.
+
+Time Complexity:
+The time complexity of this solution is O(n + m), which is much more efficient than the O(n*m) of the original nested loop approach.
+
