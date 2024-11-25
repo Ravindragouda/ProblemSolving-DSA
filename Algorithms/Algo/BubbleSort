@@ -1,0 +1,138 @@
+
+Main Method
+Input Array:
+
+int arr[] = {6, 4, 10, 15, 8, 2};
+This defines the array to be sorted. The array contains six integer elements.
+Display Array (Before Sorting):
+
+System.out.print("Array before sorting: ");
+Prints a message before displaying the array.
+for (int i : arr)
+Loops through the array and prints each element using an enhanced for loop.
+Sorting Call:
+
+int res[] = bubbleSort(arr);
+The bubbleSort method is called, and the sorted array is stored in res.
+Display Array (After Sorting):
+
+System.out.print("Array after sorting: ");
+Prints a message before displaying the sorted array.
+Another for loop prints each element of the sorted array.
+Bubble Sort Method
+Outer Loop:
+
+for (int i = 0; i < arr.length - 1; i++)
+Controls the number of passes through the array. For an array of size n, the loop runs n-1 times.
+Each pass moves the largest unsorted element to its correct position.
+Inner Loop:
+
+for (int j = 0; j < arr.length - 1 - i; j++)
+Compares adjacent elements in the unsorted part of the array.
+With each pass, the range of comparison reduces (arr.length - 1 - i) as the largest elements are sorted.
+Condition for Swap:
+
+if (arr[j] > arr[j + 1])
+Compares two adjacent elements. If the current element is larger than the next, they are swapped.
+Swapping Using XOR:
+
+The XOR operation swaps two numbers without using a temporary variable:
+arr[j] = arr[j] ^ arr[j + 1];
+Updates arr[j] to the XOR of arr[j] and arr[j+1].
+arr[j + 1] = arr[j] ^ arr[j + 1];
+Updates arr[j+1] to the original value of arr[j].
+arr[j] = arr[j] ^ arr[j + 1];
+Updates arr[j] to the original value of arr[j+1].
+Example of XOR Swap:
+For arr[j] = 6 and arr[j+1] = 4:
+
+Step 1: arr[j] = 6 ^ 4 = 2
+Step 2: arr[j+1] = 2 ^ 4 = 6
+Step 3: arr[j] = 2 ^ 6 = 4
+Now, arr[j] becomes 4, and arr[j+1] becomes 6.
+
+Return Sorted Array:
+
+After all passes, the sorted array is returned:
+return arr;
+Key Insights
+Outer Loop: Handles the number of sorting passes. Each pass ensures the largest element in the unsorted portion is correctly placed.
+Inner Loop: Performs pairwise comparisons and swaps within the unsorted portion of the array.
+Swapping Logic: Using XOR is an efficient method, especially for low-level operations where memory usage is a concern.
+
+
+
+Let’s break down the code in detail. This program implements the Bubble Sort algorithm to sort an array of integers in ascending order.
+
+1. public class BubbleSort {
+This defines the class named BubbleSort. A class is a blueprint for creating objects and contains methods, attributes, and more.
+
+2. public static int[] bubblesort(int arr[]) {
+This defines a method named bubblesort. Let’s break it down:
+
+public: This means the method can be accessed from anywhere.
+static: This allows the method to be called without creating an instance of the BubbleSort class.
+int[]: The method returns an integer array.
+arr[]: This is the input parameter, an integer array that needs to be sorted.
+3. int temp;
+A temporary variable temp is declared to facilitate the swapping of two elements in the array.
+4. for (int i = 0; i <= arr.length - 2; i++) {
+This is the outer loop. It controls how many passes the algorithm will make through the array.
+
+i = 0: The loop starts with i = 0.
+i <= arr.length - 2: The loop continues until i reaches arr.length - 2. This is because after each pass, the largest unsorted element is placed at the correct position, so fewer comparisons are needed in subsequent passes.
+i++: The loop increments i by 1 after each pass.
+5. for (int j = 0; j <= arr.length - i - 2; j++) {
+This is the inner loop, which performs the comparison and swapping of adjacent elements.
+
+j = 0: The inner loop starts from the first element of the array.
+j <= arr.length - i - 2: The loop runs up to arr.length - i - 2 because after each pass of the outer loop, the last i elements are already sorted and don’t need to be checked again.
+j++: The loop increments j by 1 after each iteration.
+6. if (arr[j] > arr[j + 1]) {
+This checks whether the current element (arr[j]) is greater than the next element (arr[j + 1]). If true, they are swapped to arrange them in ascending order.
+
+7. temp = arr[j];
+The value of arr[j] is stored in the temporary variable temp to facilitate swapping.
+8. arr[j] = arr[j + 1];
+The value of the next element (arr[j + 1]) is assigned to the current position (arr[j]).
+9. arr[j + 1] = temp;
+The value stored in temp (original value of arr[j]) is assigned to arr[j + 1].
+This completes the swap of two elements.
+
+10. return arr;
+After all passes are completed and the array is sorted, the sorted array is returned.
+
+How Bubble Sort Works (Step-by-Step Example)
+Input: arr = [5, 3, 8, 4, 2]
+First Pass (i = 0):
+Inner loop compares and swaps elements:
+Compare 5 and 3. Swap. → [3, 5, 8, 4, 2]
+Compare 5 and 8. No swap.
+Compare 8 and 4. Swap. → [3, 5, 4, 8, 2]
+Compare 8 and 2. Swap. → [3, 5, 4, 2, 8]
+After first pass, largest element 8 is in its correct position.
+
+Second Pass (i = 1):
+Compare and swap for the first 4 elements:
+Compare 3 and 5. No swap.
+Compare 5 and 4. Swap. → [3, 4, 5, 2, 8]
+Compare 5 and 2. Swap. → [3, 4, 2, 5, 8]
+Third Pass (i = 2):
+Compare and swap for the first 3 elements:
+Compare 3 and 4. No swap.
+Compare 4 and 2. Swap. → [3, 2, 4, 5, 8]
+Fourth Pass (i = 3):
+Compare the first 2 elements:
+Compare 3 and 2. Swap. → [2, 3, 4, 5, 8]
+Now, the array is fully sorted.
+
+Key Points about the Code
+Time Complexity:
+Best case:
+𝑂(𝑛)
+O(n) (already sorted array).
+Worst case:
+𝑂(𝑛2)
+O(n2) (reversed array).
+Space Complexity: 𝑂(1)
+O(1), as sorting is done in-place.
