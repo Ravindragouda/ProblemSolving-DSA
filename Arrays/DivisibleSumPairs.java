@@ -8,9 +8,9 @@ public class DivisibleSumPairs {
     public static void main(String[] args) {
         List<Integer> ar= Arrays.asList(1,3,2,6,1,2);
         int n=ar.size();
-        int k=3;
-        int res=divisibleSumPairs(n,k,ar);
-        System.out.println(res);
+                     int k=3;
+        int         res=divisibleSumPairs(n,k,ar);
+                   System.out.println(res);
     }
 
     private static int divisibleSumPairs(int n, int k, List<Integer> ar) {
