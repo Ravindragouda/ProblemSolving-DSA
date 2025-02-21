@@ -1,0 +1,5 @@
+1. List (Interface):
+    //Growable
+    //Homegenous as well as heterogenous elements are allowed
+    //Duplicates are allowed
+    //Preserve insertion order
