@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "LinkedList",
+            "request": "launch",
+            "mainClass": "Collections.Lists.LinkedList.LinkedList",
+            "projectName": "CodeWithRg_8fe43f09"
+        },
+        {
+            "type": "java",
             "name": "CollectionsDemo",
             "request": "launch",
             "mainClass": "Collections.CollectionsDemo",
